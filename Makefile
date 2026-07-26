@@ -19,5 +19,6 @@ install:
 djinit:
 	django-admin startproject config .
 
+# make appinit app_name=blog
 appinit:
-	$(MANAGE_PY) startapp $(app_name) apps/$(app_name)  # make appinit app_name=blog
+	$(MANAGE_PY) startapp $(app_name) apps/$(app_name)
