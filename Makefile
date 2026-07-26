@@ -20,4 +20,4 @@ djinit:
 	django-admin startproject config .
 
 appinit:
-	python manage.py startapp core apps/core
+	$(MANAGE_PY) startapp $(app_name) apps/$(app_name)  # make appinit app_name=blog
